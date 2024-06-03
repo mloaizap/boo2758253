@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+     <script>
+      function det1() {
+        document.getElementById("det1").innerHTML = "Inscribete en nuestros curso gratis";
+      }
+      </script>
+  
+
+  <script>
+    function det2() {
+      document.getElementById("det2").innerHTML = "Estas en la mejor pagina de recetas, aprenderas mucho";
+    }
+    </script>
+
+    </head>
+  <body>
+   
+   <!--Menú de navagación-->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Recetas gratis</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="masvisitado.html">Lo mas visitado</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Descubre
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="aperitivos.html">Apertivos</a></li>
+              <li><a class="dropdown-item" href="postres.html">Postres</a></li>
+              <li><a class="dropdown-item" href="ingreso.html">Regístrate</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="juego.html">Juego</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<!--Carrucel preferencias-->
+
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+          <img src="https://i.blogs.es/5bdfe1/1366_2000-2/1366_2000.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>galletas de avena y plátano sin azúcar.</h5>
+        <p>Opcion para consumir como postre, snacks o cuando se te antoja algo dulce..</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://img.freepik.com/fotos-premium/sopa-sancocho-venezolano-ternera_203019-8.jpg?w=1060" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Bistec a la Criolla</h5>
+        <p>Perfecto para el almuerzo o la comida..</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://img.freepik.com/fotos-premium/enorme-plato-comida-rebosante-arroz-frijoles-pollo-pescado_124507-133771.jpg?w=1060" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Sancocho</h5>
+        <p>Perfecto para una comida familiar los domingos..</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br>
+
+<!--las primeras 4 tarjetas-->
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Recetas Apertivos
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Empanadas</li>
+    <li class="list-group-item">Canapes</li>
+    <li class="list-group-item">Bocadillos y sándwiches</li>
+  </ul>
+
+    <div class="card-body">
+     <button class="btn btn-primary me-md-2" type="button" onclick="det2()">Ver mas detalles</button>
+    <p id="det2"></p>
+  </div>
+
+</div>
+     
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Recetas Arroces
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Risotto</li>
+    <li class="list-group-item">Paella</li>
+    <li class="list-group-item">Arroz chino</li>
+  </ul>
+
+    <div class="card-body">
+    <button onclick="saludar()" class="btn btn-primary me-md-2" type="button">Ver mas detalles</button>
+    <script>
+      function saludar(){
+        alert("Bienvenidos a nuestra pagina")
+      }
+        
+    </script>
+  </div>
+</div>
+
+    </div>
+
+    <div class="col">
+  <div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Cocteles y bebidas
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Batidos</li>
+    <li class="list-group-item">Jugos</li>
+    <li class="list-group-item">Cocteles</li>
+  </ul>
+
+    <div class="card-body">
+    <button class="btn btn-primary me-md-2" type="button" onclick="det1()">Ver mas detalles</button> 
+    <p id="det1"></p>
+  </div>
+</div>
+
+  </div>
+
+   <div class="col">
+  <div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Recetas de ensaladas
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Ensaladas saludables</li>
+    <li class="list-group-item">Ensaladas de frutas</li>
+    <li class="list-group-item">Ensalada de pasta</li>
+  </ul>
+
+    <div class="card-body">
+    <button onclick="saludar()" class="btn btn-primary me-md-2" type="button">Ver mas detalles</button>
+  </div>
+</div>
+
+  </div>
+
+</div>
+
+<br>
+<br>
+
+<!--las segundas 4 tarjetas-->
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Recetas sopas y cremas
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Sopas</li>
+    <li class="list-group-item">Cremas</li>
+    <li class="list-group-item">Caldos</li>
+  </ul>
+
+    <div class="card-body">
+     <button onclick="saludar()" class="btn btn-primary me-md-2" type="button">Ver mas detalles</button>
+  </div>
+
+</div>
+     
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Recetas de verduras
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Papa</li>
+    <li class="list-group-item">Calabasin</li>
+    <li class="list-group-item">Otras verduras</li>
+  </ul>
+
+    <div class="card-body">
+    <button onclick="saludar()" class="btn btn-primary me-md-2" type="button">Ver mas detalles</button>
+  </div>
+</div>
+
+    </div>
+
+    <div class="col">
+  <div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Cocteles y bebidas
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Batidos</li>
+    <li class="list-group-item">Jugos</li>
+    <li class="list-group-item">Cocteles</li>
+  </ul>
+
+    <div class="card-body">
+    <button onclick="saludar()" class="btn btn-primary me-md-2" type="button">Ver mas detalles</button>
+  </div>
+</div>
+
+  </div>
+
+   <div class="col">
+  <div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Recetas de Postres
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Tortas</li>
+    <li class="list-group-item">Postres con frutas</li>
+    <li class="list-group-item">Helado</li>
+  </ul>
+
+    <div class="card-body">
+    <button onclick="saludar()" class="btn btn-primary me-md-2" type="button">Ver mas detalles</button>
+  </div>
+</div>
+
+  </div>
+
+</div>
+
+<br> <br>
+
+<!--Tips de cocina-->
+<H2><strong>Tips de cocina</strong></H2>
+<br>
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <strong>Pelar huevos duros fácilmente</strong>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Si quieres pelar fácilmente los huevos duros solo tienes que añadir un buen chorro de vinagre al agua de cocción, de esta manera, el ácido ablandará la cáscara y hará que los huevos se pelen con mayor facilidad.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <strong> Conservar las hierbas aromáticas siempre frescas</strong>
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">La mejor manera de tener las hierbas aromáticas siempre frescas en la cocina es cortarlas, ponerlas en una cubitera, cubrirlas con aceite de oliva y después congelarlas, ya que de esta manera <strong> la humedad del aceite favorecerá una buena conservación de las hierbas.</strong>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <strong>Quitar la piel a las patatas hervidas de manera fácil</strong>
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Primero al sacarlas del agua hirviendo tienes que pasar las patatas por agua muy fría durante unos 30 segundos, después les haces unos cortes superficiales y la piel saldrá prácticamente sola.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <strong>Pelar cebollas sin llorar</strong>
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Para que no llores mientras que troceas las cebollas te aconsejamos meter las cebollas antes en el congelador unos 20 minutos, de esta manera conseguirás evitar ese lagrimeo al cortarlas que tanto nos molesta.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <img src="https://ingenieriademenu.com/wp-content/uploads/2022/05/Truco-de-cocina-facil-para-conservar-las-hierbas-aromaticas.jpg.webp" class="img-fluid" alt="...">
+    </div>
+  </div>
+  <br><br>
+  <h2><strong>Notas de interes</strong></h2>
+  <div class="row">
+    <div class="col">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+             <strong> ¿Qué es el Drunch? La Nueva Tendencia Gastronómica</strong>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>El drunch</strong> es una combinación de las palabras inglesas ‘dinner’ (cena) y ‘lunch’ (comida). Se realiza generalmente entre las 18h y 21h y se trata de una comida que es más abundante que una merienda, pero menos sustanciosa y formal que una cena.</div>
+              <img src="https://ingenieriademenu.com/wp-content/uploads/2022/03/El-drunch-es-como-se-le-llama-a-la-merienda-cena.jpg.webp" class="img-fluid" alt="..."><br> <br>
+            <strong>¿Qué se come en un drunch?</strong> <br>
+            La fórmula perfecta es <strong>escoger recetas ligeras y fáciles de hacer.</strong> ¿Y si no te apetece ensuciar muchos platos y cubiertos? Pues no hay problema, porque esto se trata de <strong>ponerlo todo en pequeñas porciones para picotear</strong> y disfrutar con los dedos o con un solo cubierto.
+           <br>
+            <li>Aperitivos</li>
+            <li>Pan en diferentes formas</li>
+            <li>Verduras de temporada</li>
+            <li>Plato principal: Carne o pescado</li>
+            <li>Postre</li>
+          
+          </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <strong>¿Qué es el snacking? La nueva tendencia healthy</strong> 
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>El snacking es el acto de consumir alimentos ligeros entre las comidas principales.</strong>Este término se utiliza para describir la ingesta de pequeñas porciones de comida, generalmente para satisfacer el hambre o antojos entre desayuno, almuerzo y cena. <br>
+              El hábito de comer entre horas se está volviendo cada vez más común, llegando incluso al status de tendencia healthy. De hecho, la mayoría de las dietas recomiendan consumir pequeñas cantidades de alimentos distribuidos a lo largo del día para saciar el apetito y así reducir la cantidad de alimentos consumidos en las comidas principales.
+            <br><br><strong>Cómo practicar el healthy snacking</strong><br>
+            La Guía Eatwell muestra los tipos y proporciones de alimentos que necesitamos ingerir para elaborar una dieta variada y equilibrada.  
+            <img src="https://ingenieriademenu.com/wp-content/uploads/2020/09/guia-eatwell-en-espanol.jpg.webp" class="img-fluid" alt="...">
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <strong>Alimentos perecederos y no perecederos | ¿Qué son y cómo conservarlos?</strong> 
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Todos los alimentos que consumimos diariamente pueden clasificarse en tres tipos: alimentos perecederos, no perecederos y semi-perecederos. Y es fundamental que todo el mundo conozca esta información para evitar enfermedades derivadas de la mala manipulación y almacenaje de los alimentos.
+           <br><br>Los alimentos perecederos son productos que deben consumirse poco después de su compra, incluso si se refrigeran, debido a su descomposición bajo factores ambientales como temperatura y humedad. Algunos ejemplos son las verduras, frutas y carnes frescas.
+              <br><br><strong>Alimentos no perecederos</strong><br>
+              Los alimentos no perecederos son aquellos alimentos que tienen una larga vida útil y que solo comienzan a descomponerse cuando son abiertos o por una mala manipulación o almacenamiento.  
+           <strong>¿Cuáles son los alimentos semi-perecederos?</strong><br><br>
+           Los alimentos semi-perecederos son los alimentos que tienen una larga durabilidad, aunque su deterioro comienza antes de lo que indica su fecha de vencimiento, además de que su descomposición se acelera al no tenerlos bien almacenados.
+           
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+  </body>
+</html>
